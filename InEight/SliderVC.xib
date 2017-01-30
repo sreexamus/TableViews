@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="1mR-3A-Adc" customClass="SliderVCViewController" customModule="InEight" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="4RY-6X-to9"/>
+                <viewControllerLayoutGuide type="bottom" id="lZo-N0-jr6"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="5Bo-9t-TcQ">
+                <rect key="frame" x="0.0" y="0.0" width="1024" height="656"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U87-bK-9vE">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="656"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="Klg-DO-bK8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLn-He-lLd">
+                        <rect key="frame" x="130" y="20" width="874" height="50"/>
+                        <color key="backgroundColor" red="1" green="0.82101248253176418" blue="0.75606144345261161" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="sql-YE-O87"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ipu-OZ-yKw" userLabel="RightContainer">
+                        <rect key="frame" x="130" y="70" width="874" height="586"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="GLn-He-lLd" firstAttribute="leading" secondItem="U87-bK-9vE" secondAttribute="trailing" id="BIX-a7-uOO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GLn-He-lLd" secondAttribute="trailing" id="Ev3-Pp-fbv"/>
+                    <constraint firstItem="GLn-He-lLd" firstAttribute="top" secondItem="4RY-6X-to9" secondAttribute="bottom" id="HeX-a0-F6b"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ipu-OZ-yKw" secondAttribute="trailing" id="Lmd-WF-hXS"/>
+                    <constraint firstItem="U87-bK-9vE" firstAttribute="leading" secondItem="5Bo-9t-TcQ" secondAttribute="leading" id="Rea-EP-5AK"/>
+                    <constraint firstItem="U87-bK-9vE" firstAttribute="top" secondItem="5Bo-9t-TcQ" secondAttribute="top" id="T0Z-nl-T1m"/>
+                    <constraint firstItem="Ipu-OZ-yKw" firstAttribute="top" secondItem="GLn-He-lLd" secondAttribute="bottom" id="XbP-l3-jVE"/>
+                    <constraint firstItem="lZo-N0-jr6" firstAttribute="top" secondItem="U87-bK-9vE" secondAttribute="bottom" id="fhY-nc-QJv"/>
+                    <constraint firstItem="Ipu-OZ-yKw" firstAttribute="leading" secondItem="U87-bK-9vE" secondAttribute="trailing" id="qR7-oY-PB6"/>
+                    <constraint firstItem="lZo-N0-jr6" firstAttribute="top" secondItem="Ipu-OZ-yKw" secondAttribute="bottom" id="yqw-qI-Aw4"/>
+                </constraints>
+            </view>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <size key="freeformSize" width="1024" height="656"/>
+            <connections>
+                <outlet property="leftContainer" destination="U87-bK-9vE" id="qB1-3h-yrY"/>
+                <outlet property="rightContainer" destination="Ipu-OZ-yKw" id="WKE-hy-vRz"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="44"/>
+        </viewController>
+    </objects>
+</document>
